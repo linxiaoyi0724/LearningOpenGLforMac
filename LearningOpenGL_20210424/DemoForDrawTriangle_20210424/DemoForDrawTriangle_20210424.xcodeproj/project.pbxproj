@@ -16,6 +16,7 @@
 		7E8DB30C26346B4800824D97 /* libGLEW.2.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8DB30B26346B4800824D97 /* libGLEW.2.2.0.dylib */; };
 		7E8DB30F26346B5C00824D97 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8DB30E26346B5C00824D97 /* OpenGL.framework */; };
 		7E8DB31126346B8700824D97 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 7E8DB31026346B8700824D97 /* glad.c */; };
+		7E9108732639B65F00CCC3EF /* myShaderProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E9108712639B65F00CCC3EF /* myShaderProgram.cpp */; };
 		7EE6F4E22635C0E4004404FC /* drawTraiangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EE6F4E12635C0E4004404FC /* drawTraiangle.cpp */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,8 @@
 		7E8DB30E26346B5C00824D97 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		7E8DB31026346B8700824D97 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glad.c; path = ../../glad/src/glad.c; sourceTree = "<group>"; };
 		7E8DB31426346F5C00824D97 /* DemoForDrawTriangle_20210424.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DemoForDrawTriangle_20210424.entitlements; sourceTree = "<group>"; };
+		7E9108712639B65F00CCC3EF /* myShaderProgram.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = myShaderProgram.cpp; sourceTree = "<group>"; };
+		7E9108722639B65F00CCC3EF /* myShaderProgram.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = myShaderProgram.hpp; sourceTree = "<group>"; };
 		7EE6F4E12635C0E4004404FC /* drawTraiangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = drawTraiangle.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +72,8 @@
 				7E04249F2638616F0049425F /* myGlfw.hpp */,
 				7E0424A4263869010049425F /* myGlad.cpp */,
 				7E0424A5263869010049425F /* myGlad.hpp */,
+				7E9108712639B65F00CCC3EF /* myShaderProgram.cpp */,
+				7E9108722639B65F00CCC3EF /* myShaderProgram.hpp */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E4878D92636FAB9006A2D2A /* PracticeDrawTriangle.cpp in Sources */,
+				7E9108732639B65F00CCC3EF /* myShaderProgram.cpp in Sources */,
 				7E0424A02638616F0049425F /* myGlfw.cpp in Sources */,
 				7E04249B26385F5E0049425F /* demoLearningShader.cpp in Sources */,
 				7E8DB2FF263468CF00824D97 /* main.cpp in Sources */,

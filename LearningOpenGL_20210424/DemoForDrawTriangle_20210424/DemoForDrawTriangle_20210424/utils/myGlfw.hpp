@@ -23,7 +23,7 @@ namespace xiaoyi {
         static void processInput(GLFWwindow* window);
         
     private:
-        static myGlfw* mInstance;
+        static myGlfw mInstance;
         
         myGlfw();
 

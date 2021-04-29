@@ -21,8 +21,7 @@ namespace xiaoyi {
         void init();
     private:
         myGlad();
-        
-        static myGlad* mInstance;
+        static myGlad mInstance;
     
     };
 }

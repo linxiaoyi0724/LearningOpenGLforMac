@@ -9,7 +9,7 @@
 
 namespace xiaoyi {
 
-myGlad* myGlad::mInstance = NULL;
+myGlad myGlad::mInstance;
 
 myGlad::myGlad()
 {
@@ -23,10 +23,7 @@ void myGlad::init(){
 }
 
 myGlad* myGlad::getInstance(){
-    if(mInstance == NULL){
-        mInstance = new myGlad();
-    }
-    return mInstance;
+    return &mInstance;
 }
 
 

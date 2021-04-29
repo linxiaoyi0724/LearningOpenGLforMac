@@ -8,7 +8,7 @@
 #include "myGlfw.hpp"
 
 namespace xiaoyi {
-    myGlfw* myGlfw::mInstance = NULL;
+    myGlfw myGlfw::mInstance;
 
     myGlfw::myGlfw()
     {
@@ -23,10 +23,7 @@ namespace xiaoyi {
 
     myGlfw* myGlfw::getInstance()
     {
-        if(mInstance == NULL){
-            mInstance = new myGlfw();
-        }
-        return mInstance;
+        return &mInstance;
     }
 
     void myGlfw::creatWindow()
