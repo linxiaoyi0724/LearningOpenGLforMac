@@ -38,6 +38,8 @@
 		7E04249F2638616F0049425F /* myGlfw.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = myGlfw.hpp; sourceTree = "<group>"; };
 		7E0424A4263869010049425F /* myGlad.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = myGlad.cpp; sourceTree = "<group>"; };
 		7E0424A5263869010049425F /* myGlad.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = myGlad.hpp; sourceTree = "<group>"; };
+		7E4451C92649911E00860086 /* shader.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.vs; sourceTree = "<group>"; };
+		7E4451CA264991E600860086 /* shader.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.fs; sourceTree = "<group>"; };
 		7E4878D82636FAB9006A2D2A /* PracticeDrawTriangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PracticeDrawTriangle.cpp; sourceTree = "<group>"; };
 		7E8DB2FB263468CF00824D97 /* DemoForDrawTriangle_20210424 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DemoForDrawTriangle_20210424; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E8DB2FE263468CF00824D97 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -78,6 +80,22 @@
 			path = utils;
 			sourceTree = "<group>";
 		};
+		7E4451C72649888B00860086 /* vs */ = {
+			isa = PBXGroup;
+			children = (
+				7E4451C92649911E00860086 /* shader.vs */,
+			);
+			path = vs;
+			sourceTree = "<group>";
+		};
+		7E4451C82649889200860086 /* fs */ = {
+			isa = PBXGroup;
+			children = (
+				7E4451CA264991E600860086 /* shader.fs */,
+			);
+			path = fs;
+			sourceTree = "<group>";
+		};
 		7E8DB2F2263468CF00824D97 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +116,8 @@
 		7E8DB2FD263468CF00824D97 /* DemoForDrawTriangle_20210424 */ = {
 			isa = PBXGroup;
 			children = (
+				7E4451C82649889200860086 /* fs */,
+				7E4451C72649888B00860086 /* vs */,
 				7E04249426385ECB0049425F /* utils */,
 				7E8DB31426346F5C00824D97 /* DemoForDrawTriangle_20210424.entitlements */,
 				7E8DB31026346B8700824D97 /* glad.c */,

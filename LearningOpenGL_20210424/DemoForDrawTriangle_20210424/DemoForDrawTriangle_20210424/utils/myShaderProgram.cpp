@@ -9,18 +9,45 @@
 
 namespace xiaoyi {
 
-myShaderProgram myShaderProgram::mInstance;
-
-
-myShaderProgram::myShaderProgram(){
+myShaderProgram::myShaderProgram(const GLchar* vertexPath, const GLchar* fragmentPath){
+    std::string vertexCode;
+    std::string fragmentCode;
+    std::ifstream vShaderFile;
+    std::ifstream fShaderFile;
+    
+    vShaderFile.exceptions(std::ifstream::failbit | std::ifstream::badbit);
+    fShaderFile.exceptions(std::ifstream::failbit | std::ifstream::badbit);
+    
+    try{
+        vShaderFile.open(vertexPath);
+        fShaderFile.open(fragmentPath);
+        std::stringstream vShaderStream, fShaderStream;
+        
+        vShaderStream << vShaderFile.rdbuf();
+        fShaderStream << fShaderFile.rdbuf();
+        
+        vShaderFile.close();
+        fShaderFile.close();
+        
+        vertexCode = vShaderStream.str();
+        fragmentCode = fShaderStream.str();
+    }
+    catch(std::ifstream::failure e)
+    {
+        std::cout << "ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ" << std::endl;
+    }
+    
+    const char* vShaderCode = vertexCode.c_str();
+    const char* fShaderCode = fragmentCode.c_str();
+    
+    unsigned int vertex, fragment;
+    vertex = createAndComplieVertexShader(vShaderCode);
+    fragment = createAndComplieFragmentShader(fShaderCode);
+    
+    createAndLinkShaderProgram(vertex, fragment);
 }
 
-myShaderProgram::~myShaderProgram(){
-}
-
-myShaderProgram* myShaderProgram::getInstance(){
-    return &mInstance;
-}
+myShaderProgram::~myShaderProgram(){}
 
 unsigned int myShaderProgram::createAndComplieVertexShader(const char* vertexShaderSource){
     unsigned int vertexShader = glCreateShader(GL_VERTEX_SHADER);
@@ -52,8 +79,8 @@ unsigned int myShaderProgram::createAndComplieFragmentShader(const char* fragmen
     return fragmentShader;
 }
 
-unsigned int myShaderProgram::createAndLinkShaderProgram(unsigned int vertexShader, unsigned int FragmentShader){
-    unsigned int shaderProgam = glCreateProgram();
+void myShaderProgram::createAndLinkShaderProgram(unsigned int vertexShader, unsigned int FragmentShader){
+    shaderProgam = glCreateProgram();
     glAttachShader(shaderProgam,vertexShader);
     glAttachShader(shaderProgam,FragmentShader);
     glLinkProgram(shaderProgam);
@@ -69,7 +96,6 @@ unsigned int myShaderProgram::createAndLinkShaderProgram(unsigned int vertexShad
     deleteShader(vertexShader);
     deleteShader(FragmentShader);
     
-    return shaderProgam;
 }
 
 void myShaderProgram::deleteShader(unsigned int shader){
@@ -78,6 +104,22 @@ void myShaderProgram::deleteShader(unsigned int shader){
 
 void myShaderProgram::deleteProgram(unsigned int program){
     glDeleteProgram(program);
+}
+
+void myShaderProgram::use(){
+    glUseProgram(shaderProgam);
+}
+
+void myShaderProgram::setBool(const std::string &name, bool value)const{
+    glUniform1i(glGetUniformLocation(shaderProgam, name.c_str()), (int)value);
+}
+
+void myShaderProgram::setInt(const std::string &name, int value)const{
+    glUniform1i(glGetUniformLocation(shaderProgam, name.c_str()),value);
+}
+
+void myShaderProgram::setFloat(const std::string &name, float value)const{
+    glUniform1f(glGetUniformLocation(shaderProgam, name.c_str()), value);
 }
 
 }

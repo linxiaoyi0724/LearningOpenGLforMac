@@ -12,20 +12,27 @@
 #include <iostream>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-
+#include <string>
+#include <fstream>
+#include <sstream>
 namespace xiaoyi {
 class myShaderProgram{
 public:
-    static myShaderProgram* getInstance();
-    unsigned int createAndComplieVertexShader(const char* vertexShaderSource);
-    unsigned int createAndComplieFragmentShader(const char* fragmentShaderSource);
-    unsigned int createAndLinkShaderProgram(unsigned int vertexShader, unsigned int fragmentShader);
-    void deleteShader(unsigned int vertexShader);
-    void deleteProgram(unsigned int program);
-private:
-    myShaderProgram();
+    unsigned int shaderProgam;
+    myShaderProgram(const GLchar* vertexPath, const GLchar* fragmentPath);
     ~myShaderProgram();
-    static myShaderProgram mInstance;
+    
+    unsigned int createAndComplieFragmentShader(const char* fragmentShaderSource);
+    unsigned int createAndComplieVertexShader(const char* vertexShaderSource);
+    void createAndLinkShaderProgram(unsigned int vertexShader, unsigned int FragmentShader);
+    
+    void deleteShader(unsigned int shader);
+    void deleteProgram(unsigned int program);
+    
+    void use();
+    void setBool(const std::string &name, bool value)const;
+    void setInt(const std::string &name, int value)const;
+    void setFloat(const std::string& name, float value)const;
 };
 }
 
