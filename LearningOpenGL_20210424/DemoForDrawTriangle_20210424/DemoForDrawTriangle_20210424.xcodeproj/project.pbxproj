@@ -18,6 +18,7 @@
 		7E8DB31126346B8700824D97 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 7E8DB31026346B8700824D97 /* glad.c */; };
 		7E9108732639B65F00CCC3EF /* myShaderProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E9108712639B65F00CCC3EF /* myShaderProgram.cpp */; };
 		7EE6F4E22635C0E4004404FC /* drawTraiangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EE6F4E12635C0E4004404FC /* drawTraiangle.cpp */; };
+		7EE79955264ACFF200F9871F /* PracticeLearningShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EE79954264ACFF200F9871F /* PracticeLearningShader.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +52,8 @@
 		7E9108712639B65F00CCC3EF /* myShaderProgram.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = myShaderProgram.cpp; sourceTree = "<group>"; };
 		7E9108722639B65F00CCC3EF /* myShaderProgram.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = myShaderProgram.hpp; sourceTree = "<group>"; };
 		7EE6F4E12635C0E4004404FC /* drawTraiangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = drawTraiangle.cpp; sourceTree = "<group>"; };
+		7EE79954264ACFF200F9871F /* PracticeLearningShader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PracticeLearningShader.cpp; sourceTree = "<group>"; };
+		7EE79957264AD61400F9871F /* practiceLearningShader.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = practiceLearningShader.vs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				7E4451C92649911E00860086 /* shader.vs */,
+				7EE79957264AD61400F9871F /* practiceLearningShader.vs */,
 			);
 			path = vs;
 			sourceTree = "<group>";
@@ -125,6 +129,7 @@
 				7EE6F4E12635C0E4004404FC /* drawTraiangle.cpp */,
 				7E4878D82636FAB9006A2D2A /* PracticeDrawTriangle.cpp */,
 				7E04249A26385F5E0049425F /* demoLearningShader.cpp */,
+				7EE79954264ACFF200F9871F /* PracticeLearningShader.cpp */,
 			);
 			path = DemoForDrawTriangle_20210424;
 			sourceTree = "<group>";
@@ -198,6 +203,7 @@
 				7E4878D92636FAB9006A2D2A /* PracticeDrawTriangle.cpp in Sources */,
 				7E9108732639B65F00CCC3EF /* myShaderProgram.cpp in Sources */,
 				7E0424A02638616F0049425F /* myGlfw.cpp in Sources */,
+				7EE79955264ACFF200F9871F /* PracticeLearningShader.cpp in Sources */,
 				7E04249B26385F5E0049425F /* demoLearningShader.cpp in Sources */,
 				7E8DB2FF263468CF00824D97 /* main.cpp in Sources */,
 				7E8DB31126346B8700824D97 /* glad.c in Sources */,
@@ -332,12 +338,14 @@
 					"$(inherited)",
 					/usr/local/Cellar/glfw/3.3.2/lib,
 					/usr/local/Cellar/glew/2.2.0/lib,
+					/usr/local/Cellar/glm/0.9.9.8/lib,
 					/usr/local/include,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glfw/3.3.2/lib,
 					/usr/local/Cellar/glew/2.2.0/lib,
+					/usr/local/Cellar/glm/0.9.9.8/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -355,12 +363,14 @@
 					"$(inherited)",
 					/usr/local/Cellar/glfw/3.3.2/lib,
 					/usr/local/Cellar/glew/2.2.0/lib,
+					/usr/local/Cellar/glm/0.9.9.8/lib,
 					/usr/local/include,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glfw/3.3.2/lib,
 					/usr/local/Cellar/glew/2.2.0/lib,
+					/usr/local/Cellar/glm/0.9.9.8/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
