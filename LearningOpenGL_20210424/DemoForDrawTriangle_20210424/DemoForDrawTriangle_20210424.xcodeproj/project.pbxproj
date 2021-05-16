@@ -63,6 +63,7 @@
 		7EE6F4E12635C0E4004404FC /* drawTraiangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = drawTraiangle.cpp; sourceTree = "<group>"; };
 		7EE79954264ACFF200F9871F /* PracticeLearningShader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PracticeLearningShader.cpp; sourceTree = "<group>"; };
 		7EE79957264AD61400F9871F /* practiceLearningShader.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = practiceLearningShader.vs; sourceTree = "<group>"; };
+		7EFE3BEA2651847E006A8D86 /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +163,7 @@
 		7EBEAA4B264C377E001D30D1 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				7EFE3BEA2651847E006A8D86 /* awesomeface.png */,
 				7E313A02264C4AB500EB87E1 /* container.jpeg */,
 				7EBEAA4E264C3808001D30D1 /* wall.jpg */,
 			);
