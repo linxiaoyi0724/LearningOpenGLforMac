@@ -12,6 +12,7 @@
 		7E0424A6263869010049425F /* myGlad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E0424A4263869010049425F /* myGlad.cpp */; };
 		7E2AA6DD265910D200465AB2 /* demoLearningTransformations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E2AA6DC265910D200465AB2 /* demoLearningTransformations.cpp */; };
 		7E4878D92636FAB9006A2D2A /* PracticeDrawTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E4878D82636FAB9006A2D2A /* PracticeDrawTriangle.cpp */; };
+		7E6E8494265A249F00385248 /* practiceLearningTransformation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E6E8493265A249F00385248 /* practiceLearningTransformation.cpp */; };
 		7E7A430C26556AEE0029B4A7 /* PracticeLearningTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E7A430B26556AEE0029B4A7 /* PracticeLearningTexture.cpp */; };
 		7E8DB2FF263468CF00824D97 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E8DB2FE263468CF00824D97 /* main.cpp */; };
 		7E8DB30926346B1800824D97 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8DB30826346B1800824D97 /* libglfw.3.3.dylib */; };
@@ -50,6 +51,7 @@
 		7E4451C92649911E00860086 /* shader.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.vs; sourceTree = "<group>"; };
 		7E4451CA264991E600860086 /* shader.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.fs; sourceTree = "<group>"; };
 		7E4878D82636FAB9006A2D2A /* PracticeDrawTriangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PracticeDrawTriangle.cpp; sourceTree = "<group>"; };
+		7E6E8493265A249F00385248 /* practiceLearningTransformation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = practiceLearningTransformation.cpp; sourceTree = "<group>"; };
 		7E7A430B26556AEE0029B4A7 /* PracticeLearningTexture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PracticeLearningTexture.cpp; sourceTree = "<group>"; };
 		7E7A430E265574DB0029B4A7 /* practicesLearningTexture.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = practicesLearningTexture.vs; sourceTree = "<group>"; };
 		7E7A430F265575C50029B4A7 /* practicesLearningTexture.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = practicesLearningTexture.fs; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				7EBEAA48264C32E9001D30D1 /* demoLearningTexture.cpp */,
 				7E7A430B26556AEE0029B4A7 /* PracticeLearningTexture.cpp */,
 				7E2AA6DC265910D200465AB2 /* demoLearningTransformations.cpp */,
+				7E6E8493265A249F00385248 /* practiceLearningTransformation.cpp */,
 			);
 			path = DemoForDrawTriangle_20210424;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				7E0424A02638616F0049425F /* myGlfw.cpp in Sources */,
 				7EE79955264ACFF200F9871F /* PracticeLearningShader.cpp in Sources */,
 				7E04249B26385F5E0049425F /* demoLearningShader.cpp in Sources */,
+				7E6E8494265A249F00385248 /* practiceLearningTransformation.cpp in Sources */,
 				7E8DB2FF263468CF00824D97 /* main.cpp in Sources */,
 				7EBEAA49264C32E9001D30D1 /* demoLearningTexture.cpp in Sources */,
 				7E8DB31126346B8700824D97 /* glad.c in Sources */,

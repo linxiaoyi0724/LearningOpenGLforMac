@@ -125,5 +125,8 @@ void myShaderProgram::setFloat(const std::string &name, float value)const{
 void myShaderProgram::setVec3(const std::string &name, glm::vec3 value)const{
     glUniform3f(glGetUniformLocation(shaderProgam, name.c_str()),value.x,value.y,value.z);
 }
+void myShaderProgram::setMat4f(const std::string& name, glm::mat4 value)const{
+    glUniformMatrix4fv(glGetUniformLocation(shaderProgam,name.c_str()),1,GL_FALSE,glm::value_ptr(value));
+}
 
 }
