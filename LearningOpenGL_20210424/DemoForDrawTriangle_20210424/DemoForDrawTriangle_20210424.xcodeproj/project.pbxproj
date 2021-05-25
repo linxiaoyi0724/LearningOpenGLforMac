@@ -24,6 +24,7 @@
 		7EBEAA49264C32E9001D30D1 /* demoLearningTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EBEAA48264C32E9001D30D1 /* demoLearningTexture.cpp */; };
 		7EE6F4E22635C0E4004404FC /* drawTraiangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EE6F4E12635C0E4004404FC /* drawTraiangle.cpp */; };
 		7EE79955264ACFF200F9871F /* PracticeLearningShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EE79954264ACFF200F9871F /* PracticeLearningShader.cpp */; };
+		7EFB7C97265C7FDD000E69E4 /* demoLearningCoordinateSystems.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EFB7C96265C7FDD000E69E4 /* demoLearningCoordinateSystems.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +45,8 @@
 		7E04249F2638616F0049425F /* myGlfw.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = myGlfw.hpp; sourceTree = "<group>"; };
 		7E0424A4263869010049425F /* myGlad.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = myGlad.cpp; sourceTree = "<group>"; };
 		7E0424A5263869010049425F /* myGlad.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = myGlad.hpp; sourceTree = "<group>"; };
+		7E26F301265D51400089D2DD /* demoLearningCoordinateSystems.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningCoordinateSystems.vs; sourceTree = "<group>"; };
+		7E26F302265D51620089D2DD /* demoLearningCoordinateSystems.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningCoordinateSystems.fs; sourceTree = "<group>"; };
 		7E2AA6DC265910D200465AB2 /* demoLearningTransformations.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = demoLearningTransformations.cpp; sourceTree = "<group>"; };
 		7E2AA6DF26597F5D00465AB2 /* demoLearningTransformation.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningTransformation.vs; sourceTree = "<group>"; };
 		7E2AA6E02659802000465AB2 /* demoLearningTransformation.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningTransformation.fs; sourceTree = "<group>"; };
@@ -73,6 +76,7 @@
 		7EE6F4E12635C0E4004404FC /* drawTraiangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = drawTraiangle.cpp; sourceTree = "<group>"; };
 		7EE79954264ACFF200F9871F /* PracticeLearningShader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PracticeLearningShader.cpp; sourceTree = "<group>"; };
 		7EE79957264AD61400F9871F /* practiceLearningShader.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = practiceLearningShader.vs; sourceTree = "<group>"; };
+		7EFB7C96265C7FDD000E69E4 /* demoLearningCoordinateSystems.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = demoLearningCoordinateSystems.cpp; sourceTree = "<group>"; };
 		7EFE3BEA2651847E006A8D86 /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +117,7 @@
 				7EBEAA51264C4725001D30D1 /* demoLearningTexture.vs */,
 				7E7A430E265574DB0029B4A7 /* practicesLearningTexture.vs */,
 				7E2AA6DF26597F5D00465AB2 /* demoLearningTransformation.vs */,
+				7E26F301265D51400089D2DD /* demoLearningCoordinateSystems.vs */,
 			);
 			path = vs;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 				7E4451CA264991E600860086 /* shader.fs */,
 				7EBEAA52264C47EF001D30D1 /* demoLearningTexture.fs */,
 				7E2AA6E02659802000465AB2 /* demoLearningTransformation.fs */,
+				7E26F302265D51620089D2DD /* demoLearningCoordinateSystems.fs */,
 			);
 			path = fs;
 			sourceTree = "<group>";
@@ -163,6 +169,7 @@
 				7E7A430B26556AEE0029B4A7 /* PracticeLearningTexture.cpp */,
 				7E2AA6DC265910D200465AB2 /* demoLearningTransformations.cpp */,
 				7E6E8493265A249F00385248 /* practiceLearningTransformation.cpp */,
+				7EFB7C96265C7FDD000E69E4 /* demoLearningCoordinateSystems.cpp */,
 			);
 			path = DemoForDrawTriangle_20210424;
 			sourceTree = "<group>";
@@ -244,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E2AA6DD265910D200465AB2 /* demoLearningTransformations.cpp in Sources */,
+				7EFB7C97265C7FDD000E69E4 /* demoLearningCoordinateSystems.cpp in Sources */,
 				7E7A430C26556AEE0029B4A7 /* PracticeLearningTexture.cpp in Sources */,
 				7E4878D92636FAB9006A2D2A /* PracticeDrawTriangle.cpp in Sources */,
 				7E9108732639B65F00CCC3EF /* myShaderProgram.cpp in Sources */,
