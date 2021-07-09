@@ -36,7 +36,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "YES"
-      customWorkingDirectory = "/Users/linxiaoyi/xiaoyi/CodeDemo/LearningOpenGLForMac/LearningOpenGL_20210424/DemoForDrawTriangle_20210424/DemoForDrawTriangle_20210424"
+      customWorkingDirectory = "/Users/i7y/xiaoyi/learningCode/LearningOpenGLforMac/LearningOpenGL_20210424/DemoForDrawTriangle_20210424/DemoForDrawTriangle_20210424"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
