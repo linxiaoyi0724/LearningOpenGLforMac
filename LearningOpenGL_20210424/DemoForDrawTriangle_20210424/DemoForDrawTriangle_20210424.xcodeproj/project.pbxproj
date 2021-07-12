@@ -30,6 +30,7 @@
 		EBF08C2E26988BEE00AACAB2 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF08C2D26988BEE00AACAB2 /* libglfw.3.3.dylib */; };
 		EBF08C3026988C2100AACAB2 /* libGLEW.2.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF08C2F26988C2100AACAB2 /* libGLEW.2.2.0.dylib */; };
 		EBF08C3126988C3100AACAB2 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8DB30E26346B5C00824D97 /* OpenGL.framework */; };
+		EBFA67442699FC310005042B /* demoLearningBasicLighting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBFA67432699FC310005042B /* demoLearningBasicLighting.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -90,8 +91,11 @@
 		7EF8F8F42683284B0086D331 /* practicesLearningCamera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = practicesLearningCamera.cpp; sourceTree = "<group>"; };
 		7EFB7C96265C7FDD000E69E4 /* demoLearningCoordinateSystems.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = demoLearningCoordinateSystems.cpp; sourceTree = "<group>"; };
 		7EFE3BEA2651847E006A8D86 /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
+		EBA15DC3269B046F0077E6E2 /* demoLearningBasicLighting.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningBasicLighting.fs; sourceTree = "<group>"; };
+		EBA15DC4269B4CC40077E6E2 /* demoLearningBasicLighting.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningBasicLighting.vs; sourceTree = "<group>"; };
 		EBF08C2D26988BEE00AACAB2 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../../usr/local/Cellar/glfw/3.3.4/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
 		EBF08C2F26988C2100AACAB2 /* libGLEW.2.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.2.0.dylib; path = ../../../../../../../usr/local/Cellar/glew/2.2.0_1/lib/libGLEW.2.2.0.dylib; sourceTree = "<group>"; };
+		EBFA67432699FC310005042B /* demoLearningBasicLighting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = demoLearningBasicLighting.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,7 @@
 				7E2AA6DF26597F5D00465AB2 /* demoLearningTransformation.vs */,
 				7E26F301265D51400089D2DD /* demoLearningCoordinateSystems.vs */,
 				7E12C652268AB5BF00DD37C5 /* demoLearningColorLighting.vs */,
+				EBA15DC4269B4CC40077E6E2 /* demoLearningBasicLighting.vs */,
 			);
 			path = vs;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 				7E26F302265D51620089D2DD /* demoLearningCoordinateSystems.fs */,
 				7E12C653268AEFDF00DD37C5 /* demoLearningColorLighting.fs */,
 				7E12C655268AF09F00DD37C5 /* demoLearningColorLightCube.fs */,
+				EBA15DC3269B046F0077E6E2 /* demoLearningBasicLighting.fs */,
 			);
 			path = fs;
 			sourceTree = "<group>";
@@ -193,6 +199,7 @@
 				7E7614AC265EA94A00DA871C /* demoLearningCamera.cpp */,
 				7EF8F8F42683284B0086D331 /* practicesLearningCamera.cpp */,
 				7E12C40F2689D2F300DD37C5 /* demoLearningColor.cpp */,
+				EBFA67432699FC310005042B /* demoLearningBasicLighting.cpp */,
 			);
 			path = DemoForDrawTriangle_20210424;
 			sourceTree = "<group>";
@@ -283,6 +290,7 @@
 				7E0424A02638616F0049425F /* myGlfw.cpp in Sources */,
 				7EE79955264ACFF200F9871F /* PracticeLearningShader.cpp in Sources */,
 				7E04249B26385F5E0049425F /* demoLearningShader.cpp in Sources */,
+				EBFA67442699FC310005042B /* demoLearningBasicLighting.cpp in Sources */,
 				7E12C4102689D2F300DD37C5 /* demoLearningColor.cpp in Sources */,
 				7E6E8494265A249F00385248 /* practiceLearningTransformation.cpp in Sources */,
 				7E8DB2FF263468CF00824D97 /* main.cpp in Sources */,
@@ -419,15 +427,17 @@
 				ENABLE_HARDENED_RUNTIME = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/local/Cellar/glfw/3.3.4/lib,
-					/usr/local/Cellar/glew/2.2.0_1/lib,
-					/usr/local/Cellar/glm/0.9.9.8/lib,
 					/usr/local/include,
+					/usr/local/Cellar/glfw/3.3.4/include,
+					/usr/local/Cellar/glew/2.2.0_1/include,
+					"/usr/local/Cellar/glm/0.9.9.8/include/**",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					/usr/local/lib,
 					/usr/local/Cellar/glfw/3.3.4/lib,
 					/usr/local/Cellar/glew/2.2.0_1/lib,
+					"/usr/local/Cellar/glm/0.9.9.8/lib/**",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -442,15 +452,17 @@
 				ENABLE_HARDENED_RUNTIME = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/local/Cellar/glfw/3.3.4/lib,
-					/usr/local/Cellar/glew/2.2.0_1/lib,
-					/usr/local/Cellar/glm/0.9.9.8/lib,
 					/usr/local/include,
+					/usr/local/Cellar/glfw/3.3.4/include,
+					/usr/local/Cellar/glew/2.2.0_1/include,
+					"/usr/local/Cellar/glm/0.9.9.8/include/**",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					/usr/local/lib,
 					/usr/local/Cellar/glfw/3.3.4/lib,
 					/usr/local/Cellar/glew/2.2.0_1/lib,
+					"/usr/local/Cellar/glm/0.9.9.8/lib/**",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
