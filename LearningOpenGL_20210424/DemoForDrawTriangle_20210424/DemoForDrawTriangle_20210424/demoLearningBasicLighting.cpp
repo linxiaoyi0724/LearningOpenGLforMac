@@ -129,11 +129,13 @@ int main()
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         
         lightingShaderProgram.use();
-        lightingShaderProgram.setVec3("objectColor", glm::vec3(1.0f,0.0f,0.0f));
+        lightingShaderProgram.setVec3("objectColor", glm::vec3(1.0f,0.5f,0.31f));
         
         lightingShaderProgram.setVec3("lightColor", glm::vec3(1.0f,1.0f,1.0f));
         
         lightingShaderProgram.setVec3("lightPos", lightPos);
+        
+        lightingShaderProgram.setVec3("viewPos", camera.mPosition);
         
         glm::mat4 projection = glm::perspective(glm::radians(camera.mZoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
         
