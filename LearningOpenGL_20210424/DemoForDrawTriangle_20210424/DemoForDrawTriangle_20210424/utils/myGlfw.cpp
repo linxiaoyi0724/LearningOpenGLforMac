@@ -46,5 +46,42 @@ namespace xiaoyi {
             glfwSetWindowShouldClose(window, true);
         }
     }
+
+    void myGlfw::processInput(GLFWwindow* window, xiaoyi::myCamera camear,float deltaTime){
+        if(glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS){
+            glfwSetWindowShouldClose(window, true);
+        }
+        if(glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS){
+            camear.processKeyBorad(FORWARD, deltaTime);
+        }
+        if(glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS){
+            camear.processKeyBorad(BACKWARD, deltaTime);
+        }
+        if(glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS){
+            camear.processKeyBorad(LEFT, deltaTime);
+        }
+        if(glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS){
+            camear.processKeyBorad(RIGHT, deltaTime);
+        }
+    }
+    void mouseCallback(GLFWwindow* windows, xiaoyi::myCamera camear, double xPos, double yPos, float lastX, float lastY, bool firstMouse)
+    {
+        if(firstMouse){
+            lastX = xPos;
+            lastY = yPos;
+            firstMouse = false;
+        }
+        float xOffset = xPos - lastX;
+        float yOffset = yPos - lastY;
+        
+        lastX = xPos;
+        lastY = yPos;
+        
+        camear.processMouseMovement(xOffset, yOffset);
+    }
+    void scrollCallback(GLFWwindow* window, xiaoyi::myCamera camear, double xOffset, double yOffset)
+    {
+        camear.processMouseScroll(yOffset);
+    }
 }
 
