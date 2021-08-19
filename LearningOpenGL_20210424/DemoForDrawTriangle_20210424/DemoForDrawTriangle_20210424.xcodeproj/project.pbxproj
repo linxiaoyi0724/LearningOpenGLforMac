@@ -27,6 +27,7 @@
 		7EE79955264ACFF200F9871F /* PracticeLearningShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EE79954264ACFF200F9871F /* PracticeLearningShader.cpp */; };
 		7EF8F8F52683284B0086D331 /* practicesLearningCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EF8F8F42683284B0086D331 /* practicesLearningCamera.cpp */; };
 		7EFB7C97265C7FDD000E69E4 /* demoLearningCoordinateSystems.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EFB7C96265C7FDD000E69E4 /* demoLearningCoordinateSystems.cpp */; };
+		EB1F5D0C26CCA98A00DE4C7C /* demoLearningMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB1F5D0B26CCA98A00DE4C7C /* demoLearningMaterial.cpp */; };
 		EBB4E07626A848E9006A161F /* practicesLearningBasicLighting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBB4E07526A848E9006A161F /* practicesLearningBasicLighting.cpp */; };
 		EBF08C2E26988BEE00AACAB2 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF08C2D26988BEE00AACAB2 /* libglfw.3.3.dylib */; };
 		EBF08C3026988C2100AACAB2 /* libGLEW.2.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF08C2F26988C2100AACAB2 /* libGLEW.2.2.0.dylib */; };
@@ -92,6 +93,11 @@
 		7EF8F8F42683284B0086D331 /* practicesLearningCamera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = practicesLearningCamera.cpp; sourceTree = "<group>"; };
 		7EFB7C96265C7FDD000E69E4 /* demoLearningCoordinateSystems.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = demoLearningCoordinateSystems.cpp; sourceTree = "<group>"; };
 		7EFE3BEA2651847E006A8D86 /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
+		EB1F5D0B26CCA98A00DE4C7C /* demoLearningMaterial.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = demoLearningMaterial.cpp; sourceTree = "<group>"; };
+		EB6D0B5626CDF1F100B1D4EA /* demoLearningMaterialLighting.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningMaterialLighting.vs; sourceTree = "<group>"; };
+		EB6D0B5726CDF21F00B1D4EA /* demoLearningMaterialLightingCube.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningMaterialLightingCube.vs; sourceTree = "<group>"; };
+		EB6D0B5826CDF23900B1D4EA /* demoLearningMaterialLightingCube.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningMaterialLightingCube.fs; sourceTree = "<group>"; };
+		EB6D0B5926CDF25500B1D4EA /* demoLearningMaterialLighting.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningMaterialLighting.fs; sourceTree = "<group>"; };
 		EBA15DC3269B046F0077E6E2 /* demoLearningBasicLighting.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningBasicLighting.fs; sourceTree = "<group>"; };
 		EBA15DC4269B4CC40077E6E2 /* demoLearningBasicLighting.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningBasicLighting.vs; sourceTree = "<group>"; };
 		EBB4E07526A848E9006A161F /* practicesLearningBasicLighting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = practicesLearningBasicLighting.cpp; sourceTree = "<group>"; };
@@ -145,6 +151,8 @@
 				7E12C652268AB5BF00DD37C5 /* demoLearningColorLighting.vs */,
 				EBA15DC4269B4CC40077E6E2 /* demoLearningBasicLighting.vs */,
 				EBC82E4726A9C6ED007EBF81 /* practicesLearningBasicLighting.vs */,
+				EB6D0B5626CDF1F100B1D4EA /* demoLearningMaterialLighting.vs */,
+				EB6D0B5726CDF21F00B1D4EA /* demoLearningMaterialLightingCube.vs */,
 			);
 			path = vs;
 			sourceTree = "<group>";
@@ -161,6 +169,8 @@
 				7E12C655268AF09F00DD37C5 /* demoLearningColorLightCube.fs */,
 				EBA15DC3269B046F0077E6E2 /* demoLearningBasicLighting.fs */,
 				EBC82E4826A9C9CF007EBF81 /* practicesLearningBasicLighting.fs */,
+				EB6D0B5826CDF23900B1D4EA /* demoLearningMaterialLightingCube.fs */,
+				EB6D0B5926CDF25500B1D4EA /* demoLearningMaterialLighting.fs */,
 			);
 			path = fs;
 			sourceTree = "<group>";
@@ -207,6 +217,7 @@
 				7E12C40F2689D2F300DD37C5 /* demoLearningColor.cpp */,
 				EBFA67432699FC310005042B /* demoLearningBasicLighting.cpp */,
 				EBB4E07526A848E9006A161F /* practicesLearningBasicLighting.cpp */,
+				EB1F5D0B26CCA98A00DE4C7C /* demoLearningMaterial.cpp */,
 			);
 			path = DemoForDrawTriangle_20210424;
 			sourceTree = "<group>";
@@ -309,6 +320,7 @@
 				7EBEAA45264C2FD9001D30D1 /* stb_image.cpp in Sources */,
 				7E0424A6263869010049425F /* myGlad.cpp in Sources */,
 				7EE6F4E22635C0E4004404FC /* drawTraiangle.cpp in Sources */,
+				EB1F5D0C26CCA98A00DE4C7C /* demoLearningMaterial.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
