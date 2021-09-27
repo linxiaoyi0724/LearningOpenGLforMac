@@ -31,6 +31,7 @@
 		EB6D8D7826D495780016C9CF /* demoLearningLightingMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB6D8D7726D495780016C9CF /* demoLearningLightingMap.cpp */; };
 		EBA34D4926E0744D00141935 /* myTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBA34D4726E0744D00141935 /* myTexture.cpp */; };
 		EBB4E07626A848E9006A161F /* practicesLearningBasicLighting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBB4E07526A848E9006A161F /* practicesLearningBasicLighting.cpp */; };
+		EBB5D3FD26E8C3B60056FFF3 /* practicesLearningLightingMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBB5D3FC26E8C3B60056FFF3 /* practicesLearningLightingMap.cpp */; };
 		EBB7EC7126D2A74000554646 /* practicesLearningMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBB7EC7026D2A74000554646 /* practicesLearningMaterial.cpp */; };
 		EBF08C2E26988BEE00AACAB2 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF08C2D26988BEE00AACAB2 /* libglfw.3.3.dylib */; };
 		EBF08C3026988C2100AACAB2 /* libGLEW.2.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF08C2F26988C2100AACAB2 /* libGLEW.2.2.0.dylib */; };
@@ -97,6 +98,12 @@
 		7EFB7C96265C7FDD000E69E4 /* demoLearningCoordinateSystems.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = demoLearningCoordinateSystems.cpp; sourceTree = "<group>"; };
 		7EFE3BEA2651847E006A8D86 /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
 		EB1F5D0B26CCA98A00DE4C7C /* demoLearningMaterial.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = demoLearningMaterial.cpp; sourceTree = "<group>"; };
+		EB3AFAB4270021DA00644E52 /* practicesLearningLightingMap.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = practicesLearningLightingMap.fs; sourceTree = "<group>"; };
+		EB3AFAB52700223B00644E52 /* practicesLearningLightingMap.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = practicesLearningLightingMap.vs; sourceTree = "<group>"; };
+		EB3AFAB62700265200644E52 /* practicesLearningLightingMapCube.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = practicesLearningLightingMapCube.fs; sourceTree = "<group>"; };
+		EB3AFAB82700406900644E52 /* practicesLearningLightingMapCube.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = practicesLearningLightingMapCube.vs; sourceTree = "<group>"; };
+		EB3AFABC2701716600644E52 /* lighting_maps_specular_color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lighting_maps_specular_color.png; sourceTree = "<group>"; };
+		EB3AFABD2701728400644E52 /* matrix.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = matrix.jpeg; sourceTree = "<group>"; };
 		EB6D0B5626CDF1F100B1D4EA /* demoLearningMaterialLighting.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningMaterialLighting.vs; sourceTree = "<group>"; };
 		EB6D0B5726CDF21F00B1D4EA /* demoLearningMaterialLightingCube.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningMaterialLightingCube.vs; sourceTree = "<group>"; };
 		EB6D0B5826CDF23900B1D4EA /* demoLearningMaterialLightingCube.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningMaterialLightingCube.fs; sourceTree = "<group>"; };
@@ -117,6 +124,7 @@
 		EBB5D3F926E84C610056FFF3 /* demoLearningLightingMapCube.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningLightingMapCube.vs; sourceTree = "<group>"; };
 		EBB5D3FA26E851830056FFF3 /* demoLearningLightingMapCube.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningLightingMapCube.fs; sourceTree = "<group>"; };
 		EBB5D3FB26E866CF0056FFF3 /* container2_specular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = container2_specular.png; sourceTree = "<group>"; };
+		EBB5D3FC26E8C3B60056FFF3 /* practicesLearningLightingMap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = practicesLearningLightingMap.cpp; sourceTree = "<group>"; };
 		EBB7EC7026D2A74000554646 /* practicesLearningMaterial.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = practicesLearningMaterial.cpp; sourceTree = "<group>"; };
 		EBC82E4726A9C6ED007EBF81 /* practicesLearningBasicLighting.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = practicesLearningBasicLighting.vs; sourceTree = "<group>"; };
 		EBC82E4826A9C9CF007EBF81 /* practicesLearningBasicLighting.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = practicesLearningBasicLighting.fs; sourceTree = "<group>"; };
@@ -161,6 +169,7 @@
 		7E4451C72649888B00860086 /* vs */ = {
 			isa = PBXGroup;
 			children = (
+				EB3AFAB32700218E00644E52 /* practicesLearningLightingMap */,
 				EBA34D4626E0713200141935 /* demoLearningLightingMap */,
 				7E4451C92649911E00860086 /* shader.vs */,
 				7EE79957264AD61400F9871F /* practiceLearningShader.vs */,
@@ -182,6 +191,7 @@
 		7E4451C82649889200860086 /* fs */ = {
 			isa = PBXGroup;
 			children = (
+				EB3AFAB22700217700644E52 /* practicesLearningLightingMap */,
 				EBB5D3F626E717900056FFF3 /* demoLearningLightingMap */,
 				7E7A430F265575C50029B4A7 /* practicesLearningTexture.fs */,
 				7E4451CA264991E600860086 /* shader.fs */,
@@ -245,6 +255,7 @@
 				EB1F5D0B26CCA98A00DE4C7C /* demoLearningMaterial.cpp */,
 				EBB7EC7026D2A74000554646 /* practicesLearningMaterial.cpp */,
 				EB6D8D7726D495780016C9CF /* demoLearningLightingMap.cpp */,
+				EBB5D3FC26E8C3B60056FFF3 /* practicesLearningLightingMap.cpp */,
 			);
 			path = DemoForDrawTriangle_20210424;
 			sourceTree = "<group>";
@@ -262,6 +273,8 @@
 		7EBEAA4B264C377E001D30D1 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				EB3AFABD2701728400644E52 /* matrix.jpeg */,
+				EB3AFABC2701716600644E52 /* lighting_maps_specular_color.png */,
 				EBB5D3FB26E866CF0056FFF3 /* container2_specular.png */,
 				EB6D8D7926D498AC0016C9CF /* container.png */,
 				7EFE3BEA2651847E006A8D86 /* awesomeface.png */,
@@ -269,6 +282,24 @@
 				7EBEAA4E264C3808001D30D1 /* wall.jpg */,
 			);
 			path = resources;
+			sourceTree = "<group>";
+		};
+		EB3AFAB22700217700644E52 /* practicesLearningLightingMap */ = {
+			isa = PBXGroup;
+			children = (
+				EB3AFAB4270021DA00644E52 /* practicesLearningLightingMap.fs */,
+				EB3AFAB62700265200644E52 /* practicesLearningLightingMapCube.fs */,
+			);
+			path = practicesLearningLightingMap;
+			sourceTree = "<group>";
+		};
+		EB3AFAB32700218E00644E52 /* practicesLearningLightingMap */ = {
+			isa = PBXGroup;
+			children = (
+				EB3AFAB52700223B00644E52 /* practicesLearningLightingMap.vs */,
+				EB3AFAB82700406900644E52 /* practicesLearningLightingMapCube.vs */,
+			);
+			path = practicesLearningLightingMap;
 			sourceTree = "<group>";
 		};
 		EBA34D4626E0713200141935 /* demoLearningLightingMap */ = {
@@ -364,6 +395,7 @@
 				7E8DB2FF263468CF00824D97 /* main.cpp in Sources */,
 				7EBEAA49264C32E9001D30D1 /* demoLearningTexture.cpp in Sources */,
 				EBB4E07626A848E9006A161F /* practicesLearningBasicLighting.cpp in Sources */,
+				EBB5D3FD26E8C3B60056FFF3 /* practicesLearningLightingMap.cpp in Sources */,
 				7EB792592660EA140046A2FA /* myCamera.cpp in Sources */,
 				7E8DB31126346B8700824D97 /* glad.c in Sources */,
 				7E7614AD265EA94A00DA871C /* demoLearningCamera.cpp in Sources */,

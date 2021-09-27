@@ -1,8 +1,8 @@
-/////Users/linxiaoyi/xiaoyi/Code/GitRepo/text_flower/textOptimizeV3_1/event.lua
-////  demoLearningLightingMap.cpp
+////
+////  practicesLearningLightingMap.cpp
 ////  DemoForDrawTriangle_20210424
 ////
-////  Created by linxiaoyi on 2021/8/24.
+////  Created by linxiaoyi on 2021/9/8.
 ////
 //
 //#include <iostream>
@@ -20,7 +20,7 @@
 //const unsigned int SCR_WIDTH = 800;
 //const unsigned int SCR_HEIGHT = 600;
 //
-//xiaoyi::myCamera camera(glm::vec3(0.0f, 0.0f, 3.0f));
+//xiaoyi::myCamera camera(glm::vec3(0.0f,0.0f,3.0f));
 //
 //float deltaTime = 0.0f;
 //float lastFrame = 0.0f;
@@ -45,91 +45,89 @@
 //
 //    float vertices[] = {
 //        // positions          // normals           // texture coords
-//         -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.0f, 0.0f,
-//          0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  1.0f, 0.0f,
-//          0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  1.0f, 1.0f,
-//          0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  1.0f, 1.0f,
-//         -0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.0f, 1.0f,
-//         -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.0f, 0.0f,
+//        -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.0f, 0.0f,
+//        0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  1.0f, 0.0f,
+//        0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  1.0f, 1.0f,
+//        0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  1.0f, 1.0f,
+//        -0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.0f, 1.0f,
+//        -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.0f, 0.0f,
 //
-//         -0.5f, -0.5f,  0.5f,  0.0f,  0.0f, 1.0f,   0.0f, 0.0f,
-//          0.5f, -0.5f,  0.5f,  0.0f,  0.0f, 1.0f,   1.0f, 0.0f,
-//          0.5f,  0.5f,  0.5f,  0.0f,  0.0f, 1.0f,   1.0f, 1.0f,
-//          0.5f,  0.5f,  0.5f,  0.0f,  0.0f, 1.0f,   1.0f, 1.0f,
-//         -0.5f,  0.5f,  0.5f,  0.0f,  0.0f, 1.0f,   0.0f, 1.0f,
-//         -0.5f, -0.5f,  0.5f,  0.0f,  0.0f, 1.0f,   0.0f, 0.0f,
+//        -0.5f, -0.5f,  0.5f,  0.0f,  0.0f, 1.0f,   0.0f, 0.0f,
+//        0.5f, -0.5f,  0.5f,  0.0f,  0.0f, 1.0f,   1.0f, 0.0f,
+//        0.5f,  0.5f,  0.5f,  0.0f,  0.0f, 1.0f,   1.0f, 1.0f,
+//        0.5f,  0.5f,  0.5f,  0.0f,  0.0f, 1.0f,   1.0f, 1.0f,
+//        -0.5f,  0.5f,  0.5f,  0.0f,  0.0f, 1.0f,   0.0f, 1.0f,
+//        -0.5f, -0.5f,  0.5f,  0.0f,  0.0f, 1.0f,   0.0f, 0.0f,
 //
-//         -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,  1.0f, 0.0f,
-//         -0.5f,  0.5f, -0.5f, -1.0f,  0.0f,  0.0f,  1.0f, 1.0f,
-//         -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,  0.0f, 1.0f,
-//         -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,  0.0f, 1.0f,
-//         -0.5f, -0.5f,  0.5f, -1.0f,  0.0f,  0.0f,  0.0f, 0.0f,
-//         -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,  1.0f, 0.0f,
+//        -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,  1.0f, 0.0f,
+//        -0.5f,  0.5f, -0.5f, -1.0f,  0.0f,  0.0f,  1.0f, 1.0f,
+//        -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,  0.0f, 1.0f,
+//        -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,  0.0f, 1.0f,
+//        -0.5f, -0.5f,  0.5f, -1.0f,  0.0f,  0.0f,  0.0f, 0.0f,
+//        -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,  1.0f, 0.0f,
 //
-//          0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,  1.0f, 0.0f,
-//          0.5f,  0.5f, -0.5f,  1.0f,  0.0f,  0.0f,  1.0f, 1.0f,
-//          0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,  0.0f, 1.0f,
-//          0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,  0.0f, 1.0f,
-//          0.5f, -0.5f,  0.5f,  1.0f,  0.0f,  0.0f,  0.0f, 0.0f,
-//          0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,  1.0f, 0.0f,
+//        0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,  1.0f, 0.0f,
+//        0.5f,  0.5f, -0.5f,  1.0f,  0.0f,  0.0f,  1.0f, 1.0f,
+//        0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,  0.0f, 1.0f,
+//        0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,  0.0f, 1.0f,
+//        0.5f, -0.5f,  0.5f,  1.0f,  0.0f,  0.0f,  0.0f, 0.0f,
+//        0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,  1.0f, 0.0f,
 //
-//         -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,  0.0f, 1.0f,
-//          0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,  1.0f, 1.0f,
-//          0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,  1.0f, 0.0f,
-//          0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,  1.0f, 0.0f,
-//         -0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,  0.0f, 0.0f,
-//         -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,  0.0f, 1.0f,
+//        -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,  0.0f, 1.0f,
+//        0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,  1.0f, 1.0f,
+//        0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,  1.0f, 0.0f,
+//        0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,  1.0f, 0.0f,
+//        -0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,  0.0f, 0.0f,
+//        -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,  0.0f, 1.0f,
 //
-//         -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,  0.0f, 1.0f,
-//          0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,  1.0f, 1.0f,
-//          0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,  1.0f, 0.0f,
-//          0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,  1.0f, 0.0f,
-//         -0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,  0.0f, 0.0f,
-//         -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,  0.0f, 1.0f
+//        -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,  0.0f, 1.0f,
+//        0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,  1.0f, 1.0f,
+//        0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,  1.0f, 0.0f,
+//        0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,  1.0f, 0.0f,
+//        -0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,  0.0f, 0.0f,
+//        -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,  0.0f, 1.0f
 //    };
 //
-//
 //    unsigned int VBO, cubeVAO;
-//    glGenVertexArrays(1, &cubeVAO);
+//    glGenVertexArrays(1,&cubeVAO);
 //    glGenBuffers(1, &VBO);
 //
 //    glBindVertexArray(cubeVAO);
 //    glBindBuffer(GL_ARRAY_BUFFER, VBO);
 //
 //    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
-//    glVertexAttribPointer(0,3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
+//    glVertexAttribPointer(0,3,GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
 //    glEnableVertexAttribArray(0);
-//    glVertexAttribPointer(1,3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3*sizeof(float)));
-//    glEnableVertexAttribArray(1);
-//    glVertexAttribPointer(2,3,GL_FLOAT,GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
-//    glEnableVertexAttribArray(2);
 //
+//    glVertexAttribPointer(1,3,GL_FLOAT,GL_FALSE,8 * sizeof(float), (void*)(3*sizeof(float)));
+//    glEnableVertexAttribArray(1);
+//    glVertexAttribPointer(2,3,GL_FLOAT,GL_FALSE, 8 * sizeof(float),(void*)(6*sizeof(float)));
+//    glEnableVertexAttribArray(2);
 //
 //    unsigned int lightVAO;
 //    glGenVertexArrays(1, &lightVAO);
 //    glBindVertexArray(lightVAO);
 //    glBindBuffer(GL_ARRAY_BUFFER,VBO);
-//    glVertexAttribPointer(0,3,GL_FLOAT, GL_FALSE, 8 *sizeof(float), (void*)0);
+//    glVertexAttribPointer(0,3,GL_FLOAT,GL_FALSE,8 *sizeof(float),(void*)0);
 //    glEnableVertexAttribArray(0);
 //
 //    glEnable(GL_DEPTH_TEST);
 //
-//
-//    myShaderProgram lightingShaderProgram("./vs/demoLearningLightingMap/demoLearningLightingMap.vs","./fs/demoLearningLightingMap/demoLearningLightingMap.fs");
-//    myShaderProgram lightingCubeShaderProgram("./vs/demoLearningLightingMap/demoLearningLightingMapCube.vs", "./fs/demoLearningLightingMap/demoLearningLightingMapCube.fs");
+//    myShaderProgram lightingShaderProgram("./vs/practicesLearningLightingMap/practicesLearningLightingMap.vs","./fs/practicesLearningLightingMap/practicesLearningLightingMap.fs");
+//    myShaderProgram lightingCubeShaderProgram("./vs/practicesLearningLightingMap/practicesLearningLightingMapCube.vs","./fs/practicesLearningLightingMap/practicesLearningLightingMapCube.fs");
 //
 //    glfwSetInputMode(myGlfw::getInstance()->mWindow, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 //
 //    unsigned int diffuseMap = myTexture::getInstance()->loadTexture("./resources/container.png");
-//    unsigned int specularMap = myTexture::getInstance()->loadTexture("./resources/container2_specular.png");
+//    unsigned int specularMap = myTexture::getInstance()->loadTexture("./resources/lighting_maps_specular_color.png");
 //
 //    lightingShaderProgram.use();
 //    lightingShaderProgram.setInt("material.diffuse", 0);
-//    lightingShaderProgram.setInt("material.specular", 1);
+//    lightingShaderProgram.setInt("material.specular",1);
 //
 //    while (!glfwWindowShouldClose(myGlfw::getInstance()->mWindow)) {
 //        float currentFrame = glfwGetTime();
-//        deltaTime = (currentFrame - lastFrame) * 0.01;
+//        deltaTime = (currentFrame - lastFrame) *  0.01;
 //        lastFrame = deltaTime;
 //
 //        processInput(myGlfw::getInstance()->mWindow);
@@ -143,11 +141,10 @@
 //        lightingShaderProgram.setVec3("light.position", lightPos);
 //        lightingShaderProgram.setVec3("viewPos", camera.mPosition);
 //
-//        lightingShaderProgram.setVec3("light.ambient", glm::vec3(0.2f, 0.2f, 0.2f));
-//        lightingShaderProgram.setVec3("light.diffuse", glm::vec3(0.5f, 0.5f, 0.5f));
-//        lightingShaderProgram.setVec3("light.specular", glm::vec3(1.0f, 1.0f, 1.0f));
+//        lightingShaderProgram.setVec3("light.ambient", glm::vec3(0.2f,0.2f,0.2f));
+//        lightingShaderProgram.setVec3("light.diffuse", glm::vec3(1.5f,1.5f,1.5f));
+//        lightingShaderProgram.setVec3("light.specular", glm::vec3(1.0f,1.0f,1.0f));
 //
-////        lightingShaderProgram.setVec3("material.specular", glm::vec3(0.5f, 0.5f, 0.5f));
 //        lightingShaderProgram.setFloat("material.shininess", 64.0f);
 //
 //        glm::mat4 projection = glm::perspective(glm::radians(camera.mZoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
@@ -162,12 +159,10 @@
 //        glBindTexture(GL_TEXTURE_2D, diffuseMap);
 //
 //        glActiveTexture(GL_TEXTURE1);
-//        glBindTexture(GL_TEXTURE_2D,specularMap);
-//
+//        glBindTexture(GL_TEXTURE_2D, specularMap);
 //
 //        glBindVertexArray(cubeVAO);
 //        glDrawArrays(GL_TRIANGLES, 0, 36);
-//
 //
 //        lightingCubeShaderProgram.use();
 //        lightingCubeShaderProgram.setMat4f("projection", projection);
@@ -187,7 +182,7 @@
 //
 //    glDeleteVertexArrays(1, &cubeVAO);
 //    glDeleteVertexArrays(1, &lightVAO);
-//    glDeleteBuffers(1, &VBO);
+//    glDeleteBuffers(1,&VBO);
 //
 //    glfwTerminate();
 //    return 0;
@@ -229,6 +224,3 @@
 //void scrollCallback(GLFWwindow* window, double xOffset, double yOffset){
 //    camera.processMouseScroll(yOffset);
 //}
-//
-//
-//
