@@ -29,6 +29,7 @@
 		7EFB7C97265C7FDD000E69E4 /* demoLearningCoordinateSystems.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EFB7C96265C7FDD000E69E4 /* demoLearningCoordinateSystems.cpp */; };
 		EB1AD4D2271E64BB00979E1B /* demoLearningMultipleLights.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB1AD4D1271E64BB00979E1B /* demoLearningMultipleLights.cpp */; };
 		EB1F5D0C26CCA98A00DE4C7C /* demoLearningMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB1F5D0B26CCA98A00DE4C7C /* demoLearningMaterial.cpp */; };
+		EB23BBC627322C8100E26D9D /* demoLearningDepthTesting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB23BBC527322C8100E26D9D /* demoLearningDepthTesting.cpp */; };
 		EB3AFABF2701F99800644E52 /* demoLearningLightCasters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB3AFABE2701F99800644E52 /* demoLearningLightCasters.cpp */; };
 		EB665924272BC3310080DDD1 /* myMesh.hpp in Sources */ = {isa = PBXBuildFile; fileRef = EB665923272BC3310080DDD1 /* myMesh.hpp */; };
 		EB665926272BD9590080DDD1 /* myModel.hpp in Sources */ = {isa = PBXBuildFile; fileRef = EB665925272BD9590080DDD1 /* myModel.hpp */; };
@@ -109,6 +110,9 @@
 		EB08712227269B9B00D7E491 /* demoLearningMultipleLightsCube.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningMultipleLightsCube.fs; sourceTree = "<group>"; };
 		EB1AD4D1271E64BB00979E1B /* demoLearningMultipleLights.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = demoLearningMultipleLights.cpp; sourceTree = "<group>"; };
 		EB1F5D0B26CCA98A00DE4C7C /* demoLearningMaterial.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = demoLearningMaterial.cpp; sourceTree = "<group>"; };
+		EB23BBC527322C8100E26D9D /* demoLearningDepthTesting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = demoLearningDepthTesting.cpp; sourceTree = "<group>"; };
+		EB23BBC82732389000E26D9D /* demoLearningDepthTesting.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningDepthTesting.vs; sourceTree = "<group>"; };
+		EB23BBCA273238A600E26D9D /* demoLearningDepthTesting.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningDepthTesting.fs; sourceTree = "<group>"; };
 		EB31F9582702BA51003A6E40 /* demoLearningLightCasters.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningLightCasters.vs; sourceTree = "<group>"; };
 		EB31F9592702BFA6003A6E40 /* demoLearningLightCasters.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningLightCasters.fs; sourceTree = "<group>"; };
 		EB3A8AC0271523FA0094E4A2 /* demoLearningLightCube.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningLightCube.vs; sourceTree = "<group>"; };
@@ -215,6 +219,7 @@
 		7E4451C72649888B00860086 /* vs */ = {
 			isa = PBXGroup;
 			children = (
+				EB23BBC72732387900E26D9D /* demoLearningDepthTesting */,
 				EB665929272C36040080DDD1 /* demoLearningModel */,
 				EB08711D2726896F00D7E491 /* demoLearningMultipleLights */,
 				EB31F9562702BA0B003A6E40 /* demoLearningLightCasters */,
@@ -240,6 +245,7 @@
 		7E4451C82649889200860086 /* fs */ = {
 			isa = PBXGroup;
 			children = (
+				EB23BBC92732389A00E26D9D /* demoLearningDepthTesting */,
 				EB66592A272C36200080DDD1 /* demoLearningModel */,
 				EB08711F27268B1E00D7E491 /* demoLearningMultipleLights */,
 				EB31F9572702BA15003A6E40 /* demoLearningLightCasters */,
@@ -311,6 +317,7 @@
 				EB3AFABE2701F99800644E52 /* demoLearningLightCasters.cpp */,
 				EB1AD4D1271E64BB00979E1B /* demoLearningMultipleLights.cpp */,
 				EB665927272BF5CD0080DDD1 /* demoLearningModel.cpp */,
+				EB23BBC527322C8100E26D9D /* demoLearningDepthTesting.cpp */,
 			);
 			path = DemoForDrawTriangle_20210424;
 			sourceTree = "<group>";
@@ -357,6 +364,22 @@
 				EB08712227269B9B00D7E491 /* demoLearningMultipleLightsCube.fs */,
 			);
 			path = demoLearningMultipleLights;
+			sourceTree = "<group>";
+		};
+		EB23BBC72732387900E26D9D /* demoLearningDepthTesting */ = {
+			isa = PBXGroup;
+			children = (
+				EB23BBC82732389000E26D9D /* demoLearningDepthTesting.vs */,
+			);
+			path = demoLearningDepthTesting;
+			sourceTree = "<group>";
+		};
+		EB23BBC92732389A00E26D9D /* demoLearningDepthTesting */ = {
+			isa = PBXGroup;
+			children = (
+				EB23BBCA273238A600E26D9D /* demoLearningDepthTesting.fs */,
+			);
+			path = demoLearningDepthTesting;
 			sourceTree = "<group>";
 		};
 		EB31F9562702BA0B003A6E40 /* demoLearningLightCasters */ = {
@@ -526,6 +549,7 @@
 				EB665924272BC3310080DDD1 /* myMesh.hpp in Sources */,
 				7E0424A02638616F0049425F /* myGlfw.cpp in Sources */,
 				EB665928272BF5CD0080DDD1 /* demoLearningModel.cpp in Sources */,
+				EB23BBC627322C8100E26D9D /* demoLearningDepthTesting.cpp in Sources */,
 				7EE79955264ACFF200F9871F /* PracticeLearningShader.cpp in Sources */,
 				7E04249B26385F5E0049425F /* demoLearningShader.cpp in Sources */,
 				EBFA67442699FC310005042B /* demoLearningBasicLighting.cpp in Sources */,
