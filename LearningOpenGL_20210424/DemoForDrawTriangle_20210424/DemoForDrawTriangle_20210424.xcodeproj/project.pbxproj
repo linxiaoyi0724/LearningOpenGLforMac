@@ -28,6 +28,7 @@
 		7EF8F8F52683284B0086D331 /* practicesLearningCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EF8F8F42683284B0086D331 /* practicesLearningCamera.cpp */; };
 		7EFB7C97265C7FDD000E69E4 /* demoLearningCoordinateSystems.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EFB7C96265C7FDD000E69E4 /* demoLearningCoordinateSystems.cpp */; };
 		EB103617273BB4E1008AC661 /* demoLearningBlending.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB103616273BB4E1008AC661 /* demoLearningBlending.cpp */; };
+		EB1A22442742440F0091CA01 /* demoLearningFrameBuffers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB1A22432742440F0091CA01 /* demoLearningFrameBuffers.cpp */; };
 		EB1AD4D2271E64BB00979E1B /* demoLearningMultipleLights.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB1AD4D1271E64BB00979E1B /* demoLearningMultipleLights.cpp */; };
 		EB1F5D0C26CCA98A00DE4C7C /* demoLearningMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB1F5D0B26CCA98A00DE4C7C /* demoLearningMaterial.cpp */; };
 		EB23BBC627322C8100E26D9D /* demoLearningDepthTesting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB23BBC527322C8100E26D9D /* demoLearningDepthTesting.cpp */; };
@@ -116,6 +117,11 @@
 		EB10361B273BBA44008AC661 /* demoLearningBlending.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningBlending.fs; sourceTree = "<group>"; };
 		EB10361C273BBA55008AC661 /* demoLearningBlending.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningBlending.vs; sourceTree = "<group>"; };
 		EB10361D273BCF2A008AC661 /* blending_transparent_window.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blending_transparent_window.png; sourceTree = "<group>"; };
+		EB1A22432742440F0091CA01 /* demoLearningFrameBuffers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = demoLearningFrameBuffers.cpp; sourceTree = "<group>"; };
+		EB1A2246274244950091CA01 /* demoLearningFrameBuffers.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningFrameBuffers.vs; sourceTree = "<group>"; };
+		EB1A2247274244AD0091CA01 /* demoLearningFrameBuffersColor.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningFrameBuffersColor.vs; sourceTree = "<group>"; };
+		EB1A2249274244C90091CA01 /* demoLearningFrameBuffers.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningFrameBuffers.fs; sourceTree = "<group>"; };
+		EB1A224A274244DC0091CA01 /* demoLearningFrameBuffersColor.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningFrameBuffersColor.fs; sourceTree = "<group>"; };
 		EB1AD4D1271E64BB00979E1B /* demoLearningMultipleLights.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = demoLearningMultipleLights.cpp; sourceTree = "<group>"; };
 		EB1F5D0B26CCA98A00DE4C7C /* demoLearningMaterial.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = demoLearningMaterial.cpp; sourceTree = "<group>"; };
 		EB23BBC527322C8100E26D9D /* demoLearningDepthTesting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = demoLearningDepthTesting.cpp; sourceTree = "<group>"; };
@@ -234,6 +240,7 @@
 		7E4451C72649888B00860086 /* vs */ = {
 			isa = PBXGroup;
 			children = (
+				EB1A2245274244710091CA01 /* demoLearningFrameBuffers */,
 				EB2A0D09273D471900CB29FD /* demoLearningFaceCulling */,
 				EB103618273BB50D008AC661 /* demoLearningBlending */,
 				EB8C542C27339125007B4CC7 /* demoLearningStencilTesting */,
@@ -263,6 +270,7 @@
 		7E4451C82649889200860086 /* fs */ = {
 			isa = PBXGroup;
 			children = (
+				EB1A2248274244BC0091CA01 /* demoLearningFrameBuffers */,
 				EB2A0D0B273D473A00CB29FD /* demoLearningFaceCulling */,
 				EB10361A273BB62C008AC661 /* demoLearningBlending */,
 				EB8C542E2733914C007B4CC7 /* demoLearningStencilTesting */,
@@ -342,6 +350,7 @@
 				EB8C542927338331007B4CC7 /* demoLearningStencilTesting.cpp */,
 				EB103616273BB4E1008AC661 /* demoLearningBlending.cpp */,
 				EB2A0D07273D3CEE00CB29FD /* demoLearningFaceCulling.cpp */,
+				EB1A22432742440F0091CA01 /* demoLearningFrameBuffers.cpp */,
 			);
 			path = DemoForDrawTriangle_20210424;
 			sourceTree = "<group>";
@@ -406,6 +415,24 @@
 				EB10361B273BBA44008AC661 /* demoLearningBlending.fs */,
 			);
 			path = demoLearningBlending;
+			sourceTree = "<group>";
+		};
+		EB1A2245274244710091CA01 /* demoLearningFrameBuffers */ = {
+			isa = PBXGroup;
+			children = (
+				EB1A2246274244950091CA01 /* demoLearningFrameBuffers.vs */,
+				EB1A2247274244AD0091CA01 /* demoLearningFrameBuffersColor.vs */,
+			);
+			path = demoLearningFrameBuffers;
+			sourceTree = "<group>";
+		};
+		EB1A2248274244BC0091CA01 /* demoLearningFrameBuffers */ = {
+			isa = PBXGroup;
+			children = (
+				EB1A2249274244C90091CA01 /* demoLearningFrameBuffers.fs */,
+				EB1A224A274244DC0091CA01 /* demoLearningFrameBuffersColor.fs */,
+			);
+			path = demoLearningFrameBuffers;
 			sourceTree = "<group>";
 		};
 		EB23BBC72732387900E26D9D /* demoLearningDepthTesting */ = {
@@ -620,6 +647,7 @@
 				7EF8F8F52683284B0086D331 /* practicesLearningCamera.cpp in Sources */,
 				EB1AD4D2271E64BB00979E1B /* demoLearningMultipleLights.cpp in Sources */,
 				7E7A430C26556AEE0029B4A7 /* PracticeLearningTexture.cpp in Sources */,
+				EB1A22442742440F0091CA01 /* demoLearningFrameBuffers.cpp in Sources */,
 				7E4878D92636FAB9006A2D2A /* PracticeDrawTriangle.cpp in Sources */,
 				7E9108732639B65F00CCC3EF /* myShaderProgram.cpp in Sources */,
 				EB665924272BC3310080DDD1 /* myMesh.hpp in Sources */,
