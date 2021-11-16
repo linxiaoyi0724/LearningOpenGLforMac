@@ -29,6 +29,7 @@
 		7EFB7C97265C7FDD000E69E4 /* demoLearningCoordinateSystems.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EFB7C96265C7FDD000E69E4 /* demoLearningCoordinateSystems.cpp */; };
 		EB103617273BB4E1008AC661 /* demoLearningBlending.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB103616273BB4E1008AC661 /* demoLearningBlending.cpp */; };
 		EB1A22442742440F0091CA01 /* demoLearningFrameBuffers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB1A22432742440F0091CA01 /* demoLearningFrameBuffers.cpp */; };
+		EB1A224C27438AAB0091CA01 /* demoLearningCubemaps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB1A224B27438AAB0091CA01 /* demoLearningCubemaps.cpp */; };
 		EB1AD4D2271E64BB00979E1B /* demoLearningMultipleLights.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB1AD4D1271E64BB00979E1B /* demoLearningMultipleLights.cpp */; };
 		EB1F5D0C26CCA98A00DE4C7C /* demoLearningMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB1F5D0B26CCA98A00DE4C7C /* demoLearningMaterial.cpp */; };
 		EB23BBC627322C8100E26D9D /* demoLearningDepthTesting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB23BBC527322C8100E26D9D /* demoLearningDepthTesting.cpp */; };
@@ -122,6 +123,17 @@
 		EB1A2247274244AD0091CA01 /* demoLearningFrameBuffersColor.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningFrameBuffersColor.vs; sourceTree = "<group>"; };
 		EB1A2249274244C90091CA01 /* demoLearningFrameBuffers.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningFrameBuffers.fs; sourceTree = "<group>"; };
 		EB1A224A274244DC0091CA01 /* demoLearningFrameBuffersColor.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningFrameBuffersColor.fs; sourceTree = "<group>"; };
+		EB1A224B27438AAB0091CA01 /* demoLearningCubemaps.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = demoLearningCubemaps.cpp; sourceTree = "<group>"; };
+		EB1A224F27438D4B0091CA01 /* demoLearningCubemaps.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningCubemaps.fs; sourceTree = "<group>"; };
+		EB1A225027438D5F0091CA01 /* demoLearningCubemaps.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningCubemaps.vs; sourceTree = "<group>"; };
+		EB1A225227438ECD0091CA01 /* bottom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bottom.jpg; sourceTree = "<group>"; };
+		EB1A225327438ECD0091CA01 /* left.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = left.jpg; sourceTree = "<group>"; };
+		EB1A225427438ECD0091CA01 /* top.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = top.jpg; sourceTree = "<group>"; };
+		EB1A225527438ECD0091CA01 /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back.jpg; sourceTree = "<group>"; };
+		EB1A225627438ECD0091CA01 /* right.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = right.jpg; sourceTree = "<group>"; };
+		EB1A225727438ECD0091CA01 /* front.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = front.jpg; sourceTree = "<group>"; };
+		EB1A2258274394DF0091CA01 /* demoLearningCubemapsSkybox.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningCubemapsSkybox.fs; sourceTree = "<group>"; };
+		EB1A22592743950E0091CA01 /* demoLearningCubemapsSkybox.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningCubemapsSkybox.vs; sourceTree = "<group>"; };
 		EB1AD4D1271E64BB00979E1B /* demoLearningMultipleLights.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = demoLearningMultipleLights.cpp; sourceTree = "<group>"; };
 		EB1F5D0B26CCA98A00DE4C7C /* demoLearningMaterial.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = demoLearningMaterial.cpp; sourceTree = "<group>"; };
 		EB23BBC527322C8100E26D9D /* demoLearningDepthTesting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = demoLearningDepthTesting.cpp; sourceTree = "<group>"; };
@@ -240,6 +252,7 @@
 		7E4451C72649888B00860086 /* vs */ = {
 			isa = PBXGroup;
 			children = (
+				EB1A224D27438D0F0091CA01 /* demoLearningCubemaps */,
 				EB1A2245274244710091CA01 /* demoLearningFrameBuffers */,
 				EB2A0D09273D471900CB29FD /* demoLearningFaceCulling */,
 				EB103618273BB50D008AC661 /* demoLearningBlending */,
@@ -270,6 +283,7 @@
 		7E4451C82649889200860086 /* fs */ = {
 			isa = PBXGroup;
 			children = (
+				EB1A224E27438D220091CA01 /* demoLearningCubemaps */,
 				EB1A2248274244BC0091CA01 /* demoLearningFrameBuffers */,
 				EB2A0D0B273D473A00CB29FD /* demoLearningFaceCulling */,
 				EB10361A273BB62C008AC661 /* demoLearningBlending */,
@@ -351,6 +365,7 @@
 				EB103616273BB4E1008AC661 /* demoLearningBlending.cpp */,
 				EB2A0D07273D3CEE00CB29FD /* demoLearningFaceCulling.cpp */,
 				EB1A22432742440F0091CA01 /* demoLearningFrameBuffers.cpp */,
+				EB1A224B27438AAB0091CA01 /* demoLearningCubemaps.cpp */,
 			);
 			path = DemoForDrawTriangle_20210424;
 			sourceTree = "<group>";
@@ -369,6 +384,7 @@
 		7EBEAA4B264C377E001D30D1 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				EB1A225127438ECD0091CA01 /* skybox */,
 				EB10361D273BCF2A008AC661 /* blending_transparent_window.png */,
 				EB103619273BB5DE008AC661 /* grass.png */,
 				EB665945272C4A400080DDD1 /* nanosuit */,
@@ -433,6 +449,37 @@
 				EB1A224A274244DC0091CA01 /* demoLearningFrameBuffersColor.fs */,
 			);
 			path = demoLearningFrameBuffers;
+			sourceTree = "<group>";
+		};
+		EB1A224D27438D0F0091CA01 /* demoLearningCubemaps */ = {
+			isa = PBXGroup;
+			children = (
+				EB1A225027438D5F0091CA01 /* demoLearningCubemaps.vs */,
+				EB1A22592743950E0091CA01 /* demoLearningCubemapsSkybox.vs */,
+			);
+			path = demoLearningCubemaps;
+			sourceTree = "<group>";
+		};
+		EB1A224E27438D220091CA01 /* demoLearningCubemaps */ = {
+			isa = PBXGroup;
+			children = (
+				EB1A224F27438D4B0091CA01 /* demoLearningCubemaps.fs */,
+				EB1A2258274394DF0091CA01 /* demoLearningCubemapsSkybox.fs */,
+			);
+			path = demoLearningCubemaps;
+			sourceTree = "<group>";
+		};
+		EB1A225127438ECD0091CA01 /* skybox */ = {
+			isa = PBXGroup;
+			children = (
+				EB1A225227438ECD0091CA01 /* bottom.jpg */,
+				EB1A225327438ECD0091CA01 /* left.jpg */,
+				EB1A225427438ECD0091CA01 /* top.jpg */,
+				EB1A225527438ECD0091CA01 /* back.jpg */,
+				EB1A225627438ECD0091CA01 /* right.jpg */,
+				EB1A225727438ECD0091CA01 /* front.jpg */,
+			);
+			path = skybox;
 			sourceTree = "<group>";
 		};
 		EB23BBC72732387900E26D9D /* demoLearningDepthTesting */ = {
@@ -648,6 +695,7 @@
 				EB1AD4D2271E64BB00979E1B /* demoLearningMultipleLights.cpp in Sources */,
 				7E7A430C26556AEE0029B4A7 /* PracticeLearningTexture.cpp in Sources */,
 				EB1A22442742440F0091CA01 /* demoLearningFrameBuffers.cpp in Sources */,
+				EB1A224C27438AAB0091CA01 /* demoLearningCubemaps.cpp in Sources */,
 				7E4878D92636FAB9006A2D2A /* PracticeDrawTriangle.cpp in Sources */,
 				7E9108732639B65F00CCC3EF /* myShaderProgram.cpp in Sources */,
 				EB665924272BC3310080DDD1 /* myMesh.hpp in Sources */,
