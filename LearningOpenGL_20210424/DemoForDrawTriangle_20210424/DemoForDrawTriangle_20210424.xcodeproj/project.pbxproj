@@ -27,6 +27,9 @@
 		7EE79955264ACFF200F9871F /* PracticeLearningShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EE79954264ACFF200F9871F /* PracticeLearningShader.cpp */; };
 		7EF8F8F52683284B0086D331 /* practicesLearningCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EF8F8F42683284B0086D331 /* practicesLearningCamera.cpp */; };
 		7EFB7C97265C7FDD000E69E4 /* demoLearningCoordinateSystems.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EFB7C96265C7FDD000E69E4 /* demoLearningCoordinateSystems.cpp */; };
+		B21184F42AA7958800C69F54 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B21184F32AA7958800C69F54 /* libglfw.3.3.dylib */; };
+		B21184F62AA7959E00C69F54 /* libGLEW.2.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B21184F52AA7959E00C69F54 /* libGLEW.2.2.0.dylib */; };
+		B21184F82AA7989600C69F54 /* libassimp.5.2.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B21184F72AA7989600C69F54 /* libassimp.5.2.4.dylib */; };
 		EB103617273BB4E1008AC661 /* demoLearningBlending.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB103616273BB4E1008AC661 /* demoLearningBlending.cpp */; };
 		EB1A22442742440F0091CA01 /* demoLearningFrameBuffers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB1A22432742440F0091CA01 /* demoLearningFrameBuffers.cpp */; };
 		EB1A224C27438AAB0091CA01 /* demoLearningCubemaps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB1A224B27438AAB0091CA01 /* demoLearningCubemaps.cpp */; };
@@ -38,15 +41,12 @@
 		EB665924272BC3310080DDD1 /* myMesh.hpp in Sources */ = {isa = PBXBuildFile; fileRef = EB665923272BC3310080DDD1 /* myMesh.hpp */; };
 		EB665926272BD9590080DDD1 /* myModel.hpp in Sources */ = {isa = PBXBuildFile; fileRef = EB665925272BD9590080DDD1 /* myModel.hpp */; };
 		EB665928272BF5CD0080DDD1 /* demoLearningModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB665927272BF5CD0080DDD1 /* demoLearningModel.cpp */; };
-		EB66592F272C406A0080DDD1 /* libassimp.5.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EB66592C272C3FDC0080DDD1 /* libassimp.5.0.0.dylib */; };
 		EB6D8D7826D495780016C9CF /* demoLearningLightingMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB6D8D7726D495780016C9CF /* demoLearningLightingMap.cpp */; };
 		EB8C542A27338331007B4CC7 /* demoLearningStencilTesting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB8C542927338331007B4CC7 /* demoLearningStencilTesting.cpp */; };
 		EBA34D4926E0744D00141935 /* myTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBA34D4726E0744D00141935 /* myTexture.cpp */; };
 		EBB4E07626A848E9006A161F /* practicesLearningBasicLighting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBB4E07526A848E9006A161F /* practicesLearningBasicLighting.cpp */; };
 		EBB5D3FD26E8C3B60056FFF3 /* practicesLearningLightingMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBB5D3FC26E8C3B60056FFF3 /* practicesLearningLightingMap.cpp */; };
 		EBB7EC7126D2A74000554646 /* practicesLearningMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBB7EC7026D2A74000554646 /* practicesLearningMaterial.cpp */; };
-		EBF08C2E26988BEE00AACAB2 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF08C2D26988BEE00AACAB2 /* libglfw.3.3.dylib */; };
-		EBF08C3026988C2100AACAB2 /* libGLEW.2.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF08C2F26988C2100AACAB2 /* libGLEW.2.2.0.dylib */; };
 		EBF08C3126988C3100AACAB2 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8DB30E26346B5C00824D97 /* OpenGL.framework */; };
 		EBFA67442699FC310005042B /* demoLearningBasicLighting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBFA67432699FC310005042B /* demoLearningBasicLighting.cpp */; };
 /* End PBXBuildFile section */
@@ -109,6 +109,9 @@
 		7EF8F8F42683284B0086D331 /* practicesLearningCamera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = practicesLearningCamera.cpp; sourceTree = "<group>"; };
 		7EFB7C96265C7FDD000E69E4 /* demoLearningCoordinateSystems.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = demoLearningCoordinateSystems.cpp; sourceTree = "<group>"; };
 		7EFE3BEA2651847E006A8D86 /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
+		B21184F32AA7958800C69F54 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../../opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
+		B21184F52AA7959E00C69F54 /* libGLEW.2.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.2.0.dylib; path = ../../../../../../../opt/homebrew/Cellar/glew/2.2.0_1/lib/libGLEW.2.2.0.dylib; sourceTree = "<group>"; };
+		B21184F72AA7989600C69F54 /* libassimp.5.2.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.5.2.4.dylib; path = ../../../../../../../opt/homebrew/Cellar/assimp/5.2.5/lib/libassimp.5.2.4.dylib; sourceTree = "<group>"; };
 		EB08711E272689A500D7E491 /* demoLearningMultipleLights.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningMultipleLights.vs; sourceTree = "<group>"; };
 		EB08712027268B4300D7E491 /* demoLearningMultipleLights.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningMultipleLights.fs; sourceTree = "<group>"; };
 		EB08712127269AFB00D7E491 /* demoLearningMultipleLightsCube.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = demoLearningMultipleLightsCube.vs; sourceTree = "<group>"; };
@@ -218,10 +221,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB66592F272C406A0080DDD1 /* libassimp.5.0.0.dylib in Frameworks */,
+				B21184F82AA7989600C69F54 /* libassimp.5.2.4.dylib in Frameworks */,
+				B21184F42AA7958800C69F54 /* libglfw.3.3.dylib in Frameworks */,
+				B21184F62AA7959E00C69F54 /* libGLEW.2.2.0.dylib in Frameworks */,
 				EBF08C3126988C3100AACAB2 /* OpenGL.framework in Frameworks */,
-				EBF08C3026988C2100AACAB2 /* libGLEW.2.2.0.dylib in Frameworks */,
-				EBF08C2E26988BEE00AACAB2 /* libglfw.3.3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +376,9 @@
 		7E8DB30726346B1800824D97 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B21184F72AA7989600C69F54 /* libassimp.5.2.4.dylib */,
+				B21184F52AA7959E00C69F54 /* libGLEW.2.2.0.dylib */,
+				B21184F32AA7958800C69F54 /* libglfw.3.3.dylib */,
 				EB66592C272C3FDC0080DDD1 /* libassimp.5.0.0.dylib */,
 				EBF08C2F26988C2100AACAB2 /* libGLEW.2.2.0.dylib */,
 				EBF08C2D26988BEE00AACAB2 /* libglfw.3.3.dylib */,
@@ -844,27 +850,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = DemoForDrawTriangle_20210424/DemoForDrawTriangle_20210424.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7UZZH4Q59N;
+				DEVELOPMENT_TEAM = BZ32Y62AX9;
 				ENABLE_HARDENED_RUNTIME = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/local/include,
 					/usr/local/Cellar/glfw/3.3.4/include,
-					/usr/local/Cellar/glew/2.2.0_1/include,
-					"/usr/local/Cellar/glm/0.9.9.8/include/**",
-					"/usr/local/Cellar/assimp/5.0.1/include/**",
+					/opt/homebrew/Cellar/glfw/3.3.8/include,
+					"/opt/homebrew/Cellar/glm/0.9.9.8/include/**",
+					"/opt/homebrew/Cellar/assimp/5.2.5/include/**",
+					"/Users/myzhen/code/PracticeCode/LearningOpenGL/LearningOpenGL_20210424/Library/include/**",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/lib,
-					/usr/local/Cellar/glfw/3.3.4/lib,
-					/usr/local/Cellar/glew/2.2.0_1/lib,
-					"/usr/local/Cellar/glm/0.9.9.8/lib/**",
-					"/usr/local/Cellar/assimp/5.0.1/lib/**",
-					/usr/local/Cellar/assimp/5.0.1/lib,
+					/opt/homebrew/Cellar/glfw/3.3.8/lib,
+					/opt/homebrew/Cellar/glew/2.2.0_1/lib,
+					"/opt/homebrew/Cellar/glm/0.9.9.8/lib/**",
+					"/opt/homebrew/Cellar/assimp/5.2.5/lib/**",
+					/opt/homebrew/Cellar/assimp/5.2.5/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -872,27 +880,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = DemoForDrawTriangle_20210424/DemoForDrawTriangle_20210424.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7UZZH4Q59N;
+				DEVELOPMENT_TEAM = BZ32Y62AX9;
 				ENABLE_HARDENED_RUNTIME = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/local/include,
 					/usr/local/Cellar/glfw/3.3.4/include,
-					/usr/local/Cellar/glew/2.2.0_1/include,
-					"/usr/local/Cellar/glm/0.9.9.8/include/**",
-					"/usr/local/Cellar/assimp/5.0.1/include/**",
+					/opt/homebrew/Cellar/glfw/3.3.8/include,
+					"/opt/homebrew/Cellar/glm/0.9.9.8/include/**",
+					"/opt/homebrew/Cellar/assimp/5.2.5/include/**",
+					"/Users/myzhen/code/PracticeCode/LearningOpenGL/LearningOpenGL_20210424/Library/include/**",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/lib,
-					/usr/local/Cellar/glfw/3.3.4/lib,
-					/usr/local/Cellar/glew/2.2.0_1/lib,
-					"/usr/local/Cellar/glm/0.9.9.8/lib/**",
-					"/usr/local/Cellar/assimp/5.0.1/lib/**",
-					/usr/local/Cellar/assimp/5.0.1/lib,
+					/opt/homebrew/Cellar/glfw/3.3.8/lib,
+					/opt/homebrew/Cellar/glew/2.2.0_1/lib,
+					"/opt/homebrew/Cellar/glm/0.9.9.8/lib/**",
+					"/opt/homebrew/Cellar/assimp/5.2.5/lib/**",
+					/opt/homebrew/Cellar/assimp/5.2.5/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
